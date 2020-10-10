@@ -7,7 +7,20 @@
 // 3
 // بحيث إن ضغطت على البطاقة تتغير الصورة للصورة الأخرى ويتغير الاسم onClick قم بإنشاء دالة واستخدام خاصية
 // دون الحاجة إلى الخطوتين 2و1
+function planett() {
+   let title = document.getElementById('caption');
+   let image = document.getElementById('image');
 
+   if (title.innerHTML == "القمر") {
+       title.innerHTML = "الشمس";
+       image.src = "./images/sun.jpg"
+       document.body.style.backgroundColor = "#ffa500" 
+   }else{
+       title.innerHTML = "القمر";
+       image.src = "./images/moon.jpg"
+       document.body.style.backgroundColor = "#182848"
+   }
+}
 // 4
 // Night - Light Mode قم بالتعديل على الدالة بحيث تضم إليها خاصية
 
